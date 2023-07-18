@@ -1,0 +1,169 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "labo_3_rsp",
+    "dateExported": "2023-07-07T13:48:13.594Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f62b640d-12d1-4e59-833b-d20b66f899be",
+            "colId": "be92d2ee-d4c6-4985-94bb-6f9d55eb49f3",
+            "containerId": "",
+            "name": "test",
+            "url": "http://localhost:7723/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-07-04T22:44:58.274Z",
+            "modified": "2023-07-07T11:54:19.184Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b4b50bc9-3727-4cb4-9539-ad143215eaf9",
+            "colId": "be92d2ee-d4c6-4985-94bb-6f9d55eb49f3",
+            "containerId": "",
+            "name": "crear JWT",
+            "url": "http://localhost:7723/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-07-04T22:46:25.811Z",
+            "modified": "2023-07-07T11:54:22.330Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \n    \"correo\":\"prop@prop.com\", \n    \"clave\":\"123456\" \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "574c4680-8aa7-4176-82a0-00fb8daa6e52",
+            "colId": "be92d2ee-d4c6-4985-94bb-6f9d55eb49f3",
+            "containerId": "",
+            "name": "verificar JWT",
+            "url": "http://localhost:7723/login",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-07-04T22:49:32.172Z",
+            "modified": "2023-07-07T12:13:35.009Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoxLCJhcGVsbGlkbyI6ImdvbnphbGV6Iiwibm9tYnJlIjoicHJvcGlldGFyaW8iLCJmb3RvIjoiMV9nb256YWxlei5qcGciLCJpZF9wZXJmaWwiOjEsImFsdW1ubyI6Ikplcm9uaW1vX0dyYW5hZGlsbG8iLCJkbmlfYWx1bW5vIjo0MjQ4OTQ0fSwiYXBpIjoiYmF6YXIiLCJpYXQiOjE2ODg3MzIwMDgsImV4cCI6MTY4ODczMjE4OH0.6hg5Hqt0gBMN1atBLgl8E2Ma1HWmTmYcdS9GibU7iY4"
+            },
+            "tests": []
+        },
+        {
+            "_id": "da48f9de-9194-4686-9d8b-acf60e507174",
+            "colId": "be92d2ee-d4c6-4985-94bb-6f9d55eb49f3",
+            "containerId": "",
+            "name": "agregar Articulo",
+            "url": "http://localhost:7723/agregarArticuloBD",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-07-04T22:58:27.489Z",
+            "modified": "2023-07-07T13:47:16.363Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "articulo_json",
+                        "value": "{\"tipo\":\"test\", \"precio\":1000}"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "foto",
+                        "value": "c:\\Users\\jerob\\OneDrive\\Imágenes\\Capturas de pantalla\\Captura de pantalla (50).png"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoxLCJhcGVsbGlkbyI6ImdvbnphbGV6Iiwibm9tYnJlIjoicHJvcGlldGFyaW8iLCJmb3RvIjoiMV9nb256YWxlei5qcGciLCJpZF9wZXJmaWwiOjEsImFsdW1ubyI6Ikplcm9uaW1vX0dyYW5hZGlsbG8iLCJkbmlfYWx1bW5vIjo0MjQ4OTQ0fSwiYXBpIjoiYmF6YXIiLCJpYXQiOjE2ODg3Mzc2MjgsImV4cCI6MTY4ODczNzgwOH0.DVM8rlt16yU69yClL_mPF8Ygqfmr6LadjwKJprjdLuA"
+            },
+            "tests": []
+        },
+        {
+            "_id": "99d8478d-e143-4b93-9048-2c37cd9c693e",
+            "colId": "be92d2ee-d4c6-4985-94bb-6f9d55eb49f3",
+            "containerId": "",
+            "name": "listar Articulos",
+            "url": "http://localhost:7723/listarArticulosBD",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-07-04T22:59:21.296Z",
+            "modified": "2023-07-07T13:47:21.942Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoxLCJhcGVsbGlkbyI6ImdvbnphbGV6Iiwibm9tYnJlIjoicHJvcGlldGFyaW8iLCJmb3RvIjoiMV9nb256YWxlei5qcGciLCJpZF9wZXJmaWwiOjEsImFsdW1ubyI6Ikplcm9uaW1vX0dyYW5hZGlsbG8iLCJkbmlfYWx1bW5vIjo0MjQ4OTQ0fSwiYXBpIjoiYmF6YXIiLCJpYXQiOjE2ODg3Mzc2MjgsImV4cCI6MTY4ODczNzgwOH0.DVM8rlt16yU69yClL_mPF8Ygqfmr6LadjwKJprjdLuA"
+            },
+            "tests": []
+        },
+        {
+            "_id": "bf0e3875-d67e-4d59-b9fd-919331c09be2",
+            "colId": "be92d2ee-d4c6-4985-94bb-6f9d55eb49f3",
+            "containerId": "",
+            "name": "modificar Articulo",
+            "url": "http://localhost:7723/artis",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-07-05T20:50:24.779Z",
+            "modified": "2023-07-07T12:20:38.198Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "articulo",
+                        "value": "{\"id_articulo\":5, \"tipo\":\"test_modif\", \"precio\":200}"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "foto",
+                        "value": "c:\\Users\\jerob\\OneDrive\\Imágenes\\Capturas de pantalla\\Captura de pantalla (40).png"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoxLCJhcGVsbGlkbyI6ImdvbnphbGV6Iiwibm9tYnJlIjoicHJvcGlldGFyaW8iLCJmb3RvIjoiMV9nb256YWxlei5qcGciLCJpZF9wZXJmaWwiOjEsImFsdW1ubyI6Ikplcm9uaW1vX0dyYW5hZGlsbG8iLCJkbmlfYWx1bW5vIjo0MjQ4OTQ0fSwiYXBpIjoiYmF6YXIiLCJpYXQiOjE2ODg3MzI0MzEsImV4cCI6MTY4ODczMjYxMX0.q_Zl6q2IJmJkKqOz_6uNROLR3mJen7eYb2xuZxpk7pM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "83076b66-7a5a-45d8-8b74-f55c54fcda85",
+            "colId": "be92d2ee-d4c6-4985-94bb-6f9d55eb49f3",
+            "containerId": "",
+            "name": "eliminar Articulo",
+            "url": "http://localhost:7723/artis",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-07-05T21:05:29.826Z",
+            "modified": "2023-07-07T13:47:30.621Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id_articulo\":15\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoxLCJhcGVsbGlkbyI6ImdvbnphbGV6Iiwibm9tYnJlIjoicHJvcGlldGFyaW8iLCJmb3RvIjoiMV9nb256YWxlei5qcGciLCJpZF9wZXJmaWwiOjEsImFsdW1ubyI6Ikplcm9uaW1vX0dyYW5hZGlsbG8iLCJkbmlfYWx1bW5vIjo0MjQ4OTQ0fSwiYXBpIjoiYmF6YXIiLCJpYXQiOjE2ODg3Mzc2MjgsImV4cCI6MTY4ODczNzgwOH0.DVM8rlt16yU69yClL_mPF8Ygqfmr6LadjwKJprjdLuA"
+            },
+            "tests": []
+        }
+    ]
+}

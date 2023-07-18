@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alta Artículo</title>
+
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="./js/funciones.js"></script>
+    <script type="text/javascript" src="./js/script_bd.js"></script>
+
+    <!-- para iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body class="bg-success">
+
+    <div class="top-content">
+
+        <div class="inner-bg">
+            <div class="container-fluid">
+            <br>
+                <div class="row">
+                    <div class="offset-4 col-8 text-info">
+                        <h2 style="color: rgb(7, 28, 151);">
+                            ARTÍCULOS
+                        </h2>
+                    </div>
+                </div>
+            
+                <div class="row">
+
+                    <div class="offset-4 col-3">
+
+                        <div class="form-bottom" style="background-color: rgb(175, 11, 197);">
+
+                            <form role="form" action="" method="" class="">
+                                <br>
+                                <div class="form-group">                                  
+                                    <div class="input-group m-2">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text fas fa-trademark"></span> 
+                                            <input type="text" class="form-control" name="tipo" id="txtTipo" style="width:248px;" placeholder="Tipo" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">    
+                                    <div class="input-group m-2">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text fas fa-dollar-sign"></span> 
+                                            <input type="text" class="form-control" name="precio" id="txtPrecio" style="width:250px;" placeholder="Precio" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group m-2">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text fas fa-camera"></span> 
+                                            <input type="file" class="form-control" name="foto" id="txtFoto" style="width:250px;" placeholder="Foto" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row m-2">
+                                    <div class="col-6">
+                                        <button type="button" class="btn btn-success btn-block" id="btnEnviar" onclick="">Agregar</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="reset" class="btn btn-warning btn-block" id="btnEnviar">Limpiar</button>
+                                    </div>
+                                </div>
+
+                                <br>
+                            </form>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

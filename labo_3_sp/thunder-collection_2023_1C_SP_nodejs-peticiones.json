@@ -1,0 +1,166 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "2023_1C_SP_nodejs-peticiones",
+    "dateExported": "2023-06-22T20:55:49.050Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "4eb1ea45-7cd3-4e28-a963-d80133eed347",
+            "colId": "225b8e7c-d0b7-4104-a7a5-b9ef15b630a3",
+            "containerId": "",
+            "name": "login - crear JWT",
+            "url": "http://localhost:2023/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-06-22T19:09:35.780Z",
+            "modified": "2023-06-22T19:10:54.321Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \n    \"correo\":\"super@super.com\", \n    \"clave\":\"123456\" \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a01c1ff1-ab2e-41d7-be87-f98389538b16",
+            "colId": "225b8e7c-d0b7-4104-a7a5-b9ef15b630a3",
+            "containerId": "",
+            "name": "login - verificar JWT",
+            "url": "http://localhost:2023/login",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-06-22T19:11:42.065Z",
+            "modified": "2023-06-22T19:13:50.741Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjozLCJjb3JyZW8iOiJzdXBlckBzdXBlci5jb20iLCJub21icmUiOiJzdXBlciIsImFwZWxsaWRvIjoidmlzb3IiLCJwZXJmaWwiOiJzdXBlcnZpc29yIiwiZm90byI6Ii4vLi4vZm90b3Mvc3VwZXJAc3VwZXIuY29tLmpwZyJ9LCJhbHVtbm8iOiJhcGVsbGlkby5ub21icmUiLCJkbmlfYWx1bW5vIjoiMDkxMjIwMTgiLCJpYXQiOjE2ODc0NjEyMjEsImV4cCI6MTY4NzQ2MTM0MX0.hFXMFMP_Vz3eM0vJOZzyDfyAb6GDFFBzevyTCxSNtGc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "23665f02-48e6-4f41-8400-437d1ccc23ee",
+            "colId": "225b8e7c-d0b7-4104-a7a5-b9ef15b630a3",
+            "containerId": "",
+            "name": "agregar juguete",
+            "url": "http://localhost:2023/agregarJugueteBD",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-22T19:09:35.778Z",
+            "modified": "2023-06-22T19:55:06.008Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "juguete_json",
+                        "value": "{\"marca\":\"toystoys2\", \"precio\":\"2500\"}"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "foto",
+                        "value": "c:\\Users\\DIYE\\Pictures\\avion.jpg"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjozLCJjb3JyZW8iOiJzdXBlckBzdXBlci5jb20iLCJub21icmUiOiJzdXBlciIsImFwZWxsaWRvIjoidmlzb3IiLCJwZXJmaWwiOiJzdXBlcnZpc29yIiwiZm90byI6Ii4vLi4vZm90b3Mvc3VwZXJAc3VwZXIuY29tLmpwZyJ9LCJhbHVtbm8iOiJhcGVsbGlkby5ub21icmUiLCJkbmlfYWx1bW5vIjoiMDkxMjIwMTgiLCJpYXQiOjE2ODc0NjM2NjYsImV4cCI6MTY4NzQ2Mzc4Nn0.TyC8sy6KxfV0FwZx177NzMtsfNpK4LFJbISWhDBoRQk"
+            },
+            "tests": []
+        },
+        {
+            "_id": "db3099f7-1013-41de-89f0-9915860baf59",
+            "colId": "225b8e7c-d0b7-4104-a7a5-b9ef15b630a3",
+            "containerId": "",
+            "name": "listado juguetes",
+            "url": "http://localhost:2023/listarJuguetesBD",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-06-22T19:09:35.779Z",
+            "modified": "2023-06-22T19:54:42.584Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjozLCJjb3JyZW8iOiJzdXBlckBzdXBlci5jb20iLCJub21icmUiOiJzdXBlciIsImFwZWxsaWRvIjoidmlzb3IiLCJwZXJmaWwiOiJzdXBlcnZpc29yIiwiZm90byI6Ii4vLi4vZm90b3Mvc3VwZXJAc3VwZXIuY29tLmpwZyJ9LCJhbHVtbm8iOiJhcGVsbGlkby5ub21icmUiLCJkbmlfYWx1bW5vIjoiMDkxMjIwMTgiLCJpYXQiOjE2ODc0NjM2NjYsImV4cCI6MTY4NzQ2Mzc4Nn0.TyC8sy6KxfV0FwZx177NzMtsfNpK4LFJbISWhDBoRQk"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e1da2a3b-29fc-4d91-9397-459c3d6e58de",
+            "colId": "225b8e7c-d0b7-4104-a7a5-b9ef15b630a3",
+            "containerId": "",
+            "name": "borrar juguete",
+            "url": "http://localhost:2023/toys",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-06-22T19:09:35.782Z",
+            "modified": "2023-06-22T20:01:56.981Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "id_juguete",
+                        "value": "7"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjozLCJjb3JyZW8iOiJzdXBlckBzdXBlci5jb20iLCJub21icmUiOiJzdXBlciIsImFwZWxsaWRvIjoidmlzb3IiLCJwZXJmaWwiOiJzdXBlcnZpc29yIiwiZm90byI6Ii4vLi4vZm90b3Mvc3VwZXJAc3VwZXIuY29tLmpwZyJ9LCJhbHVtbm8iOiJhcGVsbGlkby5ub21icmUiLCJkbmlfYWx1bW5vIjoiMDkxMjIwMTgiLCJpYXQiOjE2ODc0NjQxMDgsImV4cCI6MTY4NzQ2NDIyOH0.DTFV50HdXbB_UuFNwPoW-skRQCcK_P_OSFkm9K1yHsI"
+            },
+            "tests": []
+        },
+        {
+            "_id": "8f1e2c4f-a9bb-4732-97e9-cd9e88cc7208",
+            "colId": "225b8e7c-d0b7-4104-a7a5-b9ef15b630a3",
+            "containerId": "",
+            "name": "modificar juguete",
+            "url": "http://localhost:2023/toys",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-06-22T19:09:35.783Z",
+            "modified": "2023-06-22T19:35:20.123Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "juguete",
+                        "value": "{\"id_juguete\":5,\"marca\":\"marca_modif\",\"precio\":0}"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "foto",
+                        "value": "c:\\Users\\DIYE\\Pictures\\flor.jpg"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjozLCJjb3JyZW8iOiJzdXBlckBzdXBlci5jb20iLCJub21icmUiOiJzdXBlciIsImFwZWxsaWRvIjoidmlzb3IiLCJwZXJmaWwiOiJzdXBlcnZpc29yIiwiZm90byI6Ii4vLi4vZm90b3Mvc3VwZXJAc3VwZXIuY29tLmpwZyJ9LCJhbHVtbm8iOiJhcGVsbGlkby5ub21icmUiLCJkbmlfYWx1bW5vIjoiMDkxMjIwMTgiLCJpYXQiOjE2ODc0NjI0NjEsImV4cCI6MTY4NzQ2MjU4MX0.eK39Kw5KIn71NLy4ZXx895iM51VO7pRmN9AI4C8CPY8"
+            },
+            "tests": []
+        }
+    ]
+}
